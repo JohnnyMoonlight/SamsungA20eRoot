@@ -2,7 +2,7 @@
 This Repositoriy contains a quick wrap up of rooting a Samsung A20e with Magisk and Odin on a Linux distro.
 
 ## 0. Preliminaries
-Unlock OEM-Bootunloader.
+Unlock OEM-Bootunloader on the mobile.
 Create folder "src" on laptop.
 
 ## 1. Magisk 
@@ -49,11 +49,14 @@ When stuck in bootloop or whatsoever, flash stockrom:
 
 Recovery:
 
-./odin4 -c ./src/SAMFW.COM_SM-A202F_DBT_A202FXXU5CWF2_fac/CP_A202FXXU5CWF1_CP24415051_CL26555245_QB66592928_REV00_user_low_ship.tar.md5 -a ./src/SAMFW.COM_SM-A202F_DBT_A202FXXU5CWF2_fac/AP_A202FXXU5CWF2_CL26555245_QB67141591_REV00_user_low_ship_meta_OS11.tar.md5 -b ./src/SAMFW.COM_SM-A202F_DBT_A202FXXU5CWF2_fac/BL_A202FXXU5CWF2_CL26555245_QB67141591_REV00_user_low_ship.tar.md5
+`./odin4 -c ./src/SAMFW.COM_SM-A202F_DBT_A202FXXU5CWF2_fac/CP_A202FXXU5CWF1_CP24415051_CL26555245_QB66592928_REV00_user_low_ship.tar.md5 -a ./src/SAMFW.COM_SM-A202F_DBT_A202FXXU5CWF2_fac/AP_A202FXXU5CWF2_CL26555245_QB67141591_REV00_user_low_ship_meta_OS11.tar.md5 -b ./src/SAMFW.COM_SM-A202F_DBT_A202FXXU5CWF2_fac/BL_A202FXXU5CWF2_CL26555245_QB67141591_REV00_user_low_ship.tar.md5`
 
 ## 7. Further things to do from here:
 
 Install adb on laptop: `sudo apt-get install android-tools-adb`
+
 Start shell connection to mobile `adb shell`
+
 Start root session `su` (after execution confirm in magisk on mobile)
+
 Hack stuff :)
